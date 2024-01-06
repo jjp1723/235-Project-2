@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Dog Finder</title>
+	<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+	<script src="js/myscripts.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>Dog Finder</h1>
+	</header>
+
+	<div class="parameters">
+		<div class="widgets">
+			<label for="breeds">Choose a breed:</label>
+			<select name="breeds" id="breeds">
+			</select>
+		  </div>
+
+		  <div class="widgets">
+			  Max # results -> 
+			  <select id="limit">
+				  <option value="5">5</option>
+				  <option value="10" selected>10</option>
+				  <option value="25">25</option>
+				  <option value="50">50</option>
+			  <option value="100">100</option>
+			  <option value="150">150</option>
+			  <option value="200">200</option>
+			  </select>
+		  </div>
+	</div>
+
+	<div class="widgets">
+		<button type="button" id="search" class="search">Search for Dogs!</button>
+	</div>
+	<div id="status">Ready to Search!</div>
+
+	<div class="widgets">
+		<div id="pages">
+			<button type="button" class="leftArrow"><p></p><i class="arrow left"></i> Prev</p></button>
+			<p>Page 1</p>
+			<button type="button" class="rightArrow"><p>Next <i class="arrow right"></i></p></button>
+		</div>
+	</div>
+
+	<br><hr>
+
+	<h2>Results:</h2>
+	<div id="content">
+		<p>No data yet!</p>
+	</div>
+
+	<a href="../documentation/project2.html" target="_blank">Project 2 Documentation</a>
+</body>
+</html>
